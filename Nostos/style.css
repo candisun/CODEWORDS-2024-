@@ -1,0 +1,83 @@
+body {
+    font-family: monospace;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.random-poem {
+    margin-left: 200px;
+    width: 50%;   /* Limited space to the middle 60% of the window */
+    line-height: -5;   /* Adjusted line-height to shrink text vertically */
+    word-spacing: -3px;
+    min-width: 800px;
+}
+
+/*.blank {
+    border-bottom: 1px solid  blue; 
+    
+}*/
+
+/*..blank1 {
+    border-bottom: 1px solid  blue; 
+    
+}
+
+.blank2 {
+    border-bottom: 1px solid  blue; 
+    
+}*/
+
+.blue-placeholder {
+    color: blue; 
+}
+
+.word1 {
+    margin-top: 0%;
+    margin-left: -30%;
+    /*animation: float 2s ease-in-out infinite; /* Apply the floating animation */
+}
+
+.word2 {
+    margin-left: 30%;
+    margin-top: 30%;
+}
+
+#happy, #sorrow {
+    color: blue; /* Initial color for 'sorrow' */
+    cursor: grab !important;
+    animation: float 3s ease-in-out infinite !important;
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the original position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 10px at the midpoint */
+    }
+}
+
+
+.word-sorrow, .blank.filled-sorrow {
+    color: blue;  /* Initial color for 'sorrow' */
+}
+
+#happy, .word-happy, .blank.filled-happy {
+    color:blue;  /* Initial color for 'happy' */
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.no-blank-style {
+    /* Add properties to override the blank styles */
+    background: none;
+    border: none;
+    /* Add other properties as needed */
+}
