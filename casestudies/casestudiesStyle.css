@@ -1,0 +1,119 @@
+a {
+  text-decoration: none;
+  font-size: 30px;
+  position: relative;
+  margin-left: 2%;
+}
+
+a:hover {
+  color: rgb(0, 0, 0); 
+}
+
+.previous {
+  color: #FF0000;
+}
+
+.movingfruit {
+  position: absolute; /* Ensure the image can move around the viewport */
+  width: 10%; /* Adjust the size as needed */
+  animation: bounce2 4000000s infinite, bounce2 50000s infinite; 
+  }
+
+  body{
+    background-color: #ffffff;
+    background-image: url('https://png.pngtree.com/png-clipart/20220921/ourmid/pngtree-transparent-film-grain-texture-effect-clipart-psd-png-image_6209627.png');
+    background-size:60%;
+    background-blend-mode: multiply; /* Apply multiply blend mode */
+  }
+  
+  @keyframes bounce2 {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(0);
+    }
+  } 
+
+.fruit {
+  text-decoration: none;
+  white-space: nowrap;
+
+}
+
+.hover-text {
+  visibility: hidden;
+  color: #FF0000;
+  position: fixed; /* Change to fixed to position relative to the viewport */
+  top: 0; 
+  left: 30%; 
+  margin-top: 30px; 
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 130px;
+  font-family: 'Helvetica';
+  font-weight: lighter;
+  white-space: nowrap;
+  text-wrap:wrap;
+  line-height: 0.65;
+  letter-spacing: -6px; 
+
+}
+
+.fruit:hover .hover-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+#cameronsworld {
+  position: absolute; /* Allow positioning with top and left */
+  margin-top: 2%; /* 10% more to the top */
+  margin-left: 10%; /* 10% more to the left */
+}
+
+#concretepoetry {
+  position: absolute; /* Allow positioning with top and left */
+  margin-top: 12%; /* 10% more to the top */
+  margin-left: 5%; /* 10% more to the left */
+}
+
+#netart {
+  position: absolute; /* Allow positioning with top and left */
+  margin-top: 20%; /* 10% more to the top */
+  margin-left: 22%; /* 10% more to the left */
+}
+
+#generativeart {
+  position: absolute; /* Allow positioning with top and left */
+  margin-top: 22%; /* 10% more to the top */
+  margin-left: 52%; /* 10% more to the left */
+}
+#typeinspace {
+  position: absolute; /* Allow positioning with top and left */
+  margin-top: 37%; /* 10% more to the top */
+  margin-left: 42%; /* 10% more to the left */
+}
+
+@keyframes bounce {
+  0% {
+    top: 90vh;
+    left: 10vw;
+  }
+  25% {
+    top: 10vh;
+    left: 90vw;
+  }
+  50% {
+    top: 10vh;
+    left: 10vw;
+  }
+  75% {
+    top: 90vh;
+    left: 90vw;
+  }
+  100% {
+    top: 90vh;
+    left: 10vw;
+  }
+}

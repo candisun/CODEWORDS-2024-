@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="reflections.js"></script>
+  <link rel="stylesheet" href="netartStyle.css">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+  <title>netart</title>
+  <style>
+    a {
+      font-family: 'Oxanium', sans-serif;
+      color: chartreuse;
+      font-size: 70px;
+      line-height: 95%;
+      font-weight: bold;
+      text-align: left;
+    }
+    body {
+      margin: 40px;
+      font-size: 12px;
+      font-family: Geneva, sans-serif;
+      line-height: 13.5px;
+      background-color: rgb(255, 255, 255); 
+      color: #000000;
+    }
+    .rafwork {
+      width: 65%;
+      margin-left: 285px;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: -110px;
+    }
+    .text {
+      margin-top: 100px;
+      margin-left: -10px;
+      width: 30%;
+      color: #000000;
+    }
+    .caption {
+      margin-top: -30px;
+      margin-left: 305px;
+      display: flex;
+      width: 30%;
+      color:chartreuse;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .column {
+      flex: 1;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+    .rafwork2 {
+      width: 16%;
+      position: absolute;
+      top: 280px;
+      left: 470px;
+      animation: rotateForever 5s linear infinite;
+    }
+    .angwork2 {
+      width: 16%;
+      position: absolute;
+      top: 710px; 
+      left: 250px;
+      z-index: -10;
+      animation: rotateForever 5s linear infinite;
+    }
+
+    @keyframes rotateForever {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+
+    }
+    .newtext {
+    position: absolute; 
+    right: 40px;
+    top: 780px; 
+    width: 30%;
+    color: #000000;
+    }
+    .new-section .header {
+      position: absolute; 
+      color: rgb(76, 0, 255);
+      font-family: 'Oxanium', sans-serif;
+      font-size: 70px;
+      line-height: 95%;
+      font-weight: bold;
+      top:1000px;
+      left:40px;    }
+      
+
+  </style>
+</head>
+<body>
+  <header>
+    <a>RAFAËL<br>ROZENDAAL</a>
+  </header>
+  <div class="container">
+    <div class="text">
+      <p>
+        Rozendaal’s work has made me appreciate the close relationship between generative art and graphic design. 
+        <br>The reliance on algorithms and process-based creation in generative art parallels the way graphic designers use software tools to produce structured and repeatable visual elements. This reflection has deepened my appreciation for how creative spontaneity and systematic design can blend, especially as computational tools become increasingly integral to graphic design.
+        <br><br>Rafaël Rozendaal’s work significantly intersects with graphic design, particularly through his approach to minimalism and the visual language of the internet. His distinctive style, rooted in bold colours and geometric shapes, often draws comparisons to modernist graphic design principles, especially in his "Abstract Browsing" project, which converts the architecture of websites into tapestries. These tapestries highlight the similarities between pixels and stitches, underscoring how design elements from the digital world can translate into physical art forms.
+        <br><br>Rozendaal’s influence extends into graphic design by
+        <br>bridging the gap between code, colour, and composition. His art uses simple, efficient visual language—a quality that resonates with graphic designers who often seek clarity and minimalism in their work. His use of bold, abstract forms inspired by
+       web structures has influenced many in graphic design communities.
+      </p>
+    </div>
+    <div class="column">
+      <img src="https://media.itsnicethat.com/original_images/569cd00a7fa44cd02f005d13.gif" class="rafwork">
+      <div class="caption">
+        <p>Rafaël Rozendaal, Abstract Browsing</p>
+      </div>
+    <div class="new-section">
+        <div class="header">
+          ANGELO<br>PLESSAS
+        </div>
+        <div class="newtext">
+          <p>
+            Angelo Plessas, a Greek-Italian artist, has made a significant impact in the realm of digital art through his innovative approach to interactive websites. His creations transcend traditional artistic boundaries, transforming the digital space into a canvas for virtual sculptures. Plessas integrates various media elements - including drawing, sound, Flash animation, and experimental HTML coding - to craft immersive two-dimensional, web-based artworks.
+            <br><br>Encountering Plessas' work, I was initially shocked by its boldness and unconventional nature. The interactive elements of his pieces challenged my preconceptions about the possibilities of user engagement in art. His approach is both playful and thought-provoking, inviting viewers to become active participants in the artistic experience. His inherent characteristics of the digital medium to create works that are constantly evolving, and shaped by the actions and choices of the audience. 
+            <br><br>The boldness I initially found shocking in Plessas' work has revealed itself to be a considered artistic strategy. By embracing the full potential of web technologies, he creates experiences that are simultaneously accessible and avant-garde. His work serves as a powerful reminder of the possibilities
+             that lie<br> at the intersection of art and technology, inspiring both 
+             <br>artists and viewers to reimagine the role of digital spaces 
+             <br>in contemporary art.
+          </p>
+      </div>
+  </div>
+
+      <img src="https://i.pinimg.com/originals/a7/26/2b/a7262b47fcbab29bc1f9d82417b66ea0.gif"
+        class="rafwork2">
+      
+        <img src="https://biennale8.gr/wp-content/uploads/2022/12/HomoNoosphericus-drawing-for-quilt-2022-1.jpg"
+        class="angwork2">
+
+
+  </body>
+</html>

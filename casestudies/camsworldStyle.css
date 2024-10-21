@@ -1,0 +1,268 @@
+
+
+body {
+    margin-top: 78px;
+    margin-right: 5%;
+    margin-left:7%;
+    font-size: 14px;
+    font-family:'Times New Roman', Times, serif;
+    color: #ffffff;
+    background-image: url("https://i.pinimg.com/originals/7c/9d/89/7c9d89f08ee222deaf947c592f95af8a.gif");
+    background-size: cover; 
+    background-position: center; /* Center the background image */
+    background-repeat: repeat; 
+    }   
+    
+    header {
+    color:  #ffffff;
+    font-size:78px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-animation: glow 0.3s ease-in-out infinite alternate;
+    -moz-animation: glow 0.2s ease-in-out infinite alternate;
+    animation: glow 0.5s ease-in-out infinite alternate;
+    }
+    a {
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 0%;
+        margin-top: 0%;
+        padding: 8px 16px;
+        position: absolute;
+        z-index: 10;
+        font-size: 30px;
+        color:  #48ff00;
+        -webkit-animation: none;
+        -moz-animation: none;
+        animation: none;
+    }
+    
+      a:hover {
+        color: rgb(188, 255, 193); 
+      }
+    .link1{
+        color:  #ffffff;
+        font-size:40px ;
+        position: absolute;
+        margin-left: -2%;
+        margin-top: 10%;
+        font-weight: bold;
+        font-style: italic;
+        -webkit-animation: glow 0.3s ease-in-out infinite alternate;
+        -moz-animation: glow 0.2s ease-in-out infinite alternate;
+        animation: glow 0.5s ease-in-out infinite alternate;
+       }
+       .link2{
+        color:  #48ff00;
+        font-size:20px ;
+        font-family:'Times New Roman', Times, serif;
+        position: absolute;
+        margin-top:-51%;
+        margin-left: 30%;
+        z-index: 10;
+        font-weight: bold;
+        font-style: italic;
+        -webkit-animation: glow 0.3s ease-in-out infinite alternate;
+        -moz-animation: glow 0.2s ease-in-out infinite alternate;
+        animation: glow 0.5s ease-in-out infinite alternate;
+       }
+    
+    
+    @-webkit-keyframes glow {
+        from {
+          text-shadow: 0 0 10px #ffffff, 0 0 20px #fff, 0 0 30px #e600cb, 0 0 40px #e60073, 0 0 50px #e600b4, 0 0 60px #e60073, 0 0 70px #e60073;
+        }
+        to {
+          text-shadow: 0 0 20px #fff, 0 0 30px #ff4dde, 0 0 40px #ff4de1, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+        }
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        
+    }
+    
+    
+    .text1 {
+        margin-top: 10%;
+        padding: 20px;
+        background-color: color-mix(in srgb, #ff00ff 30%, #ff1493 30%);
+        border: 3px solid #ff00b7;
+        color: #ffffff;
+        font-family: 'Comic Sans MS', sans-serif;
+        border-style: dashed;
+        max-width: 100%; /* Ensure it doesn't exceed the container's width */
+        min-width: 200px; /* Set a minimum width */
+        max-height: 505px;
+    }
+    .text1 p {
+        margin-top: -70%;
+        line-height: 1.2;  
+        z-index: -1;
+    }
+    .shinestar {
+        width: 60%;
+        position: relative;
+        z-index: -1;
+        margin-top: -35%;
+        margin-left: 40%;
+    }
+    
+    .star {
+        width: 80%;
+        position: relative;
+        margin-top: -20%;
+    }
+     
+    .hearts{
+        width:85%;
+        margin-left: -15%;
+        margin-top: -40%;
+        z-index: 1;
+    }
+    .qq{
+        width:70%;
+        z-index: 10;
+        position: relative;
+        margin-left: 80%;
+        margin-top: -90%;
+        z-index: 2;
+       
+    }
+             
+    .girl{
+        width:25%;
+        position: absolute;
+        z-index: 10;
+        margin-top: -58%;
+        margin-left: 12%;
+    }
+
+    .images{
+        margin-top: 10%;
+        padding: 15px;
+        border: 3px solid #ffffff00;
+        max-width: 33.3%; /* Ensure it doesn't exceed the container's width */
+        min-width: 200px; /* Set a minimum width */
+        height: auto; /* Maintain the aspect ratio */
+    }
+
+      .text2 {
+        margin-top: 10%;
+        padding: 15px;
+        background-color: color-mix(in srgb, #ffe3ff 10%, #ffffff 70%);
+        color: #ff00c3;
+        font-family: 'Comic Sans MS', sans-serif;
+        max-width: 33.3%; /* Ensure it doesn't exceed the container's width */
+        min-width: 200px; /* Set a minimum width */
+        max-height: 400px;
+    }
+    .text2 p {
+        line-height: 1.2;  
+        z-index: -1;
+    }
+    .garden{
+        width:150%;
+        position: absolute;
+        z-index:-2 ;
+        margin-top:-35%;
+        margin-left:-11%;
+        max-width: 33.3%; /* Ensure it doesn't exceed the container's width */
+        min-width: 200px;
+    }
+            
+    
+      .lollies{
+        width:150%;
+        position: relative;
+        top:-20%; 
+        z-index: 10;
+
+      }
+      .pony{
+        width:70%;
+        position: relative;
+        top:-5%; 
+        z-index: 1;
+    
+    }    
+      .heart{
+        width:70%;
+        position: relative;
+        top:-17%; 
+        right:-80%;
+        z-index: 1;
+      }
+    
+    .candy{
+        width:80%;
+        position: relative;
+        top:-18%; 
+      }
+    
+        .strawberry{
+        width:60%;
+        position: relative;
+        top:-42.5%; 
+
+        z-index:1;
+
+        }
+    .bingsu{
+        width:100%;
+        position: relative;
+        top:-45%; 
+        right:-67%;
+        z-index:1;
+    }
+    .rose{
+        width:100%;
+        position: relative;
+        top:-53%; 
+        right:-90%;
+    }
+ 
+
+    .mermaid{
+        width:100%;
+        position: relative;
+        margin-top:-100%; 
+        right:-87%;
+   
+    
+    }
+    .rosegirl{
+        width:80%;
+        position: relative;
+        top:-60%; 
+        right:-75%;
+        z-index: 10;
+    }
+  
+
+    .frame{
+        width:100.3%;
+        position: absolute;
+        top:0px; 
+        left: 0px;
+    
+    } 
+    
+    .flower{
+        width:100%;
+        position: absolute;
+        z-index: -100;
+        top:-250px; 
+        left: 1px;
+    }      
+    
+    .cam{
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -100;
+        object-fit: cover; /* Ensures the image covers the entire area */
+    }

@@ -1,0 +1,218 @@
+body {
+margin: 78px;
+font-size: 13px;
+align-items: center;
+font-family:'Times New Roman', Times, serif;
+
+color: #ffffff;
+background-image: url("https://i.pinimg.com/originals/7c/9d/89/7c9d89f08ee222deaf947c592f95af8a.gif");
+background-size: cover; 
+background-position: center; /* Center the background image */
+background-repeat: repeat; 
+}   
+
+  header {
+    color:  #ffffff;
+    font-size:60px ;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-animation: glow 0.3s ease-in-out infinite alternate;
+    -moz-animation: glow 0.2s ease-in-out infinite alternate;
+    animation: glow 0.5s ease-in-out infinite alternate;
+   }
+
+   a{
+    color:  #ffffff;
+    font-size:20px ;
+    position: absolute;
+    margin-left:100px ;
+    margin-top:-12px ;
+    z-index: 1;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-animation: glow 0.3s ease-in-out infinite alternate;
+    -moz-animation: glow 0.2s ease-in-out infinite alternate;
+    animation: glow 0.5s ease-in-out infinite alternate;
+   }
+
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffffff, 0 0 20px #fff, 0 0 30px #e600cb, 0 0 40px #e60073, 0 0 50px #e600b4, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4dde, 0 0 40px #ff4de1, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+.text{
+  margin-top: 13.4%; /* Adjust the width as needed */
+  width: 30% ;
+  padding:5px;
+  background-color: color-mix(in srgb, #ff00ff 10%, #ff1493 10%);
+  border: 3px solid #ff00b7; 
+  color: #ff00c3; 
+  font-family: comic sans ms;
+  border-style: dashed;
+
+}
+
+.text2{
+    background-color: rgba(0, 0, 0, 0);
+    padding: 40px; 
+    font-size: 13px;
+    font-family: comic sans ms;
+    color:#ff00c3; 
+    margin-left:725px;
+    margin-top: -470px;
+    width: 24%;
+    position: relative;
+    z-index: 99;
+
+}
+
+
+  .lollies{
+    width:20%;
+    position: absolute;
+    top: 360px; 
+    left: 470px;
+  }
+
+  .heart{
+    width:10%;
+    position: absolute;
+    top: 110px; 
+    left: 550px;
+  }
+
+.candy{
+    width:15%;
+    position: absolute;
+    top: 235px; 
+    left: 430px;
+    }
+
+.wings{
+    width:5%;
+    position: absolute;
+    top: 460px; 
+    left: 750px;
+    }
+
+    .strawberry{
+    width:10%;
+    position: absolute;
+    top: 460px; 
+    left: 420px;
+    }
+.bingsu{
+    width:15%;
+    position: absolute;
+    top: 210px; 
+    left: 580px;
+}
+    
+.star{
+    width:28%;
+    position: absolute;
+    top: 101px; 
+    left: 80px;
+}
+    
+.butterfly{
+    width:5%;
+    position: absolute;
+    top: 480px; 
+    left: 950px;
+}
+    
+.mushroom{
+    width:8%;
+    position: absolute;
+    top: 500px; 
+    left: 850px;
+}
+    
+.garden{
+    width:42%;
+    position: absolute;
+    top: 40px; 
+    left: 720px;
+    z-index:-1 ;
+}
+    
+.frame{
+    width:100.3%;
+    position: absolute;
+    top:0px; 
+    left: 0px;
+
+} 
+
+.hearts{
+    width:26%;
+    position: absolute;
+    top:502px; 
+    left: 6px;
+
+}
+
+
+.rose{
+    width:17%;
+    position: absolute;
+    top:500px; 
+    left: 560px;
+
+}
+    
+.girl{
+    width:25%;
+    position: absolute;
+    top:610px; 
+    left: 670px;
+
+}
+.qq{
+    width:19%;
+    position: absolute;
+    top:570px; 
+    left: 375px;
+
+}
+.mermaid{
+    width:12%;
+    position: absolute;
+    top:520px; 
+    left: 1105px;
+
+}
+.rosegirl{
+    width:12%;
+    position: absolute;
+    top:510px; 
+    left: 970px;
+
+}    
+.pony{
+    width:10%;
+    position: absolute;
+    top:125px; 
+    left: 415px;
+
+}    
+
+.shinestar{
+    width:12%;
+    top:140px; 
+    left: 655px;
+} 
+
+.flower{
+    width:100%;
+    position: absolute;
+    z-index: -100;
+    top:-250px; 
+    left: 1px;
+}      
+
