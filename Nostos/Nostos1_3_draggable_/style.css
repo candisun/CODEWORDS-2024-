@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.random-poem {
+    margin-left: 200px;
+    width: 50%;   /* Limited space to the middle 60% of the window */
+    line-height: -60;   /* Adjusted line-height to shrink text vertically */
+    word-spacing: -50px;
+}
+
+.blank {
+    border-bottom: 1px solid black;
+    padding: 10 23px;
+    margin: 20 30;
+  
+}
+
+.word {
+    cursor: grab;
+
+}

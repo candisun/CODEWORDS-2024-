@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#sentence {
+    margin-bottom: 20px;
+}
+
+.blank {
+    border-bottom: 2px solid black;
+    padding: 0 23px;
+}
+
+.word {
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: grab;
+}
