@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">  <!-- handle textual content put on it -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"> <!-- allow browser versions-->
+    <meta name="viewport" content="width=device-width",initial-scale=1.0>  <!-- controls the initial zoom level-->
+    <title> Moving Text </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #arrow {
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 50px;
+            color: rgb(255, 255, 255);
+            font-family: 'Courier New';
+            margin-top:-10%;
+            margin-left: -5%;
+            margin-bottom: 10%;
+            
+        }
+        #arrow:hover {
+            color:  rgb(159, 159, 159);
+        }
+        
+        body{
+            display: flex;
+            align-items:center;
+            justify-content: center;
+            background: black;
+            min-height: 100vh;
+        }
+        
+        .text  .normal-text{
+            color: rgb(255, 255, 255);
+            font-size: 60px;
+            font-weight: 600;
+        }
+        
+        .text  .animate-text{
+            margin-left: 15px;
+            height: 80px;
+            line-height: 90px;
+            overflow: hidden;
+        }
+        
+        .text  .animate-text li{
+            list-style: none;
+            color: hwb(62 0% 0%);
+            font-size: 60px;
+            font-weight: 800;
+            position: relative;
+            top: 0;
+            animation: animate 8s steps(4)infinite;
+        }
+        
+        @keyframes animate{
+            100%{
+                top: -360px;
+            }   
+        }
+        
+        .animate-text li span{
+            position:relative;
+            margin: 5px 0;
+            line-height: 90px;
+        }
+        
+        .animate-text li span::after{
+            content: '';
+            position: absolute;
+            left:30;
+            height: 100%;
+            width: 100%;
+            background: black;
+            border-left: 3px solid white;
+            animation: type 2s steps(10)infinite;
+        }
+        
+        @keyframes type{
+            40%, 60%{
+                left:calc(100% + 30px)
+            }
+            100%{
+                left: 0;
+            }   
+        }
+        
+        </style>
+</head>
+
+<body>
+    <a href="crackEgg.html" id="arrow">&larr;</a>
+    <div class="text"> <!--point to a class name in a style sheet -->
+        <div class="normal-text">Hello,</div>  
+        <ul class="animate-text">   <!--create list -->
+            <li><span>world.</span></li>
+            <li><span>World.</span></li>
+            <li><span>WORLD.</span></li>
+            <li><span>WORLD!</span></li>
+            <li><span>WORLD!!!</span></li>
+        </ul>
+    </div>
+
+</body>
+</html>
+

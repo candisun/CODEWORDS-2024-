@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Reflection</title>
+    <link rel="icon" type="image/x-icon" href="data/grapefruithalf.png">
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica', sans-serif;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: #000000;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 14.5px;
+            font-weight: 300;
+            line-height: 1.2;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr ; /* Two columns */
+            gap: 20px;
+        }
+        /* Header Section */
+        .header {
+            grid-column: span 2; /* Spans both columns */
+            text-align: left;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        #arrow {
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 40px;
+            color: #00ff08;
+            font-family: 'Courier New', monospace;
+            position: absolute;
+            top: 6px;
+            left: 100px;
+        }
+        #arrow:hover {
+            color: #abffae;
+        }
+        .header h1 {
+            font-size: 100px;
+            font-weight: 100;
+            color: #00ff08;
+            margin: 0;
+            letter-spacing: -2px;
+        }
+        h1 {
+            font-size: 56px;
+            font-weight: 100;
+            color: #00ff08;
+            letter-spacing: -2px;
+            line-height: 0.8;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #00ff08;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.3;
+        }
+        /* Content Styles */
+        .grid-item {
+            background-color: #ffffff;
+            margin-bottom: 0;
+        }
+        .grid-item p {
+            margin: 0 0;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive Styling */
+        @media (max-width: 1000px) {
+            .header h1 {
+                font-size: 150px;
+            }
+            #arrow {
+                font-size: 30px;
+            }
+            .container {
+                grid-template-columns: 1fr; /* Single column on small screens */
+            }
+        }
+        img {
+            margin-top: 10px;
+            width: 45%;
+            height: auto;
+            flex-direction: column;
+        }
+        #feedback2 {
+            margin-top: -0px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" id="arrow">&larr;</a>
+        
+        <!-- Introduction Section -->
+        <div class="grid-item">   
+            <h1>reflection of the studio</h1>
+            <h3 id="intro">introduction</h3>
+            <p>Throughout the development of my final project, the journey has been shaped by constant learning, feedback, and the challenges of creative coding. From discovering bugs through user testing to managing time effectively, each experience has contributed to my growth as both a designer and a coder. This process has shown me the importance of collaboration, self-discipline, and the value of stepping outside my comfort zone to achieve something new.</p>
+        </div>
+
+        <!-- Importance of Feedback Section -->
+        <div class="grid-item">
+            <h3>importance of feedback</h3>
+            <p>Receiving constant feedback throughout the creation of my final project has been invaluable. Having others test your work is the easiest way to identify flaws you may not see yourself. For instance, when Alvin tested Nostos 4.0, he discovered a bug I wouldn’t have noticed on my own. When I test my work, I follow a default flow, putting words in blanks in order. However, Alvin dragged the first word to the second blank first, revealing that the linking to the next page didn’t work properly. This kind of feedback is crucial, as it exposes both issues and unexpected highlights in my work. When friends interpret my project, they often explain it in ways I hadn’t considered, which actually helps me better explain it to others.</p>
+            <img src="data/feedback1.jpg" id="feedback">
+            <img src="data/feedback3.jpg" id="feedback">
+            <img src="data/feedback2.jpg" id="feedback2">
+
+        </div>
+        <!-- Time Management Section -->
+        <div class="grid-item">
+            <h3>time management</h3>
+            <p>Maintaining a consistent schedule and planning ahead have been crucial in my time management. Moving forward, I aim to improve this skill, especially with creative coding projects. I’ve learned that starting early is key, and now that I have a better sense of how long these projects take, I feel more capable of estimating time accurately. It's also important to accept that some aspects of the project may need to be let go. As a perfectionist, I realise it’s okay to stop at some point and focus on wrapping up the design process.</p>
+        </div>
+
+        <!-- Discovering Creative Coding Section -->
+        <div class="grid-item">
+            <h3>discovering creative coding</h3>
+            <p>This studio ignited my passion for creative coding. Before this experience, I never imagined myself coding, as it seemed impossible and unrelated to my strengths. I didn’t excel in STEM subjects and always doubted my ability to step outside my comfort zone. However, this journey changed my perspective entirely. I ended up creating something I’m genuinely proud of, and it gave me the confidence to believe that I can accomplish anything if I set my mind to it.</p>
+        </div>
+
+        <!-- Learning from Mentors Section -->
+        <div class="grid-item">
+            <h3>learning from mentors</h3>
+            <p>A debugging session with Karen Ann was particularly impactful. Her calm, logical approach helped me work through complex coding issues, and now, whenever I face a bug, I think, "What would Karen Ann do?" This mindset has made me more resilient, not just in coding but in life. I’ll carry this lesson forward, staying calm and methodical no matter the challenges I face, confident that I’ll keep moving forward.</p>
+        </div>
+
+        <!-- Conclusion Section -->
+        <div class="grid-item">
+            <h3>conclusion</h3>
+            <p>Reflecting on this journey, I’ve gained not only technical skills but also a confidence in my ability to tackle creative coding challenges. From the support and insights of peers and mentors to overcoming bugs with patience, each step has reinforced my belief that with the right mindset, anything is achievable. Moving forward, I am excited to continue exploring the intersection of design and technology, knowing that these experiences have equipped me with the resilience and creativity to succeed.</p>
+        </div>
+    </div>
+</body>
+</html>

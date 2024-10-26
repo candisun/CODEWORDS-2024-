@@ -1,0 +1,116 @@
+header {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 70px;
+    margin-bottom: -75px;
+    margin-top: -45px;
+    line-height: 95%;
+  }
+  
+  body {
+    margin: 40px;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Syne', sans-serif;
+    background-color: rgb(255, 0, 30); 
+    color: #ffffff;
+   }
+
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-left:-1.5%;
+  padding: 8px 16px;
+}
+
+a:hover {
+  color: rgb(0, 0, 0); 
+}
+
+.previous {
+  color: rgb(255, 255, 255);
+}
+p{
+  margin-top: 0%;
+}
+  
+  .okok{
+    width:40%;
+    margin-top: 100px;
+    margin-left: -23px;
+  }
+
+  .text{
+    margin-top: 70px;
+    width: 30% ;
+    padding: 15px;
+    color: #ffffff; /* Text color */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .column {
+    flex: 1;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+  .okoktext {
+    width:10%;
+    position: absolute;
+    top: 100px; 
+    left:500px;
+    z-index: 9999;
+    animation: moveImage 6s infinite alternate;
+    }
+    
+    @keyframes moveImage {
+        0% { top: 100px; left: 500px; }
+        25% { top: 100px; left: 1000px; }
+        50% { top: 500px; left: 1000px; }
+        75% { top: 900px; left: 500px; }
+        100% { top: 100px; left: 500px; }
+      }
+
+ .okoktext2 {
+    background-color: rgb(0, 0, 0);
+    padding: 40px; 
+    font-family:monospace;
+    font-size: 23px;
+    color:rgb(255, 0, 64);
+    margin-left:8px;
+    margin-top: 30px;
+    width: 92%;
+
+}
+.okoktext2 p {
+    animation: flicker 0.8s infinite;
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    5% { opacity: 0.4; }
+    10% { opacity: 0.9; }
+    15% { opacity: 0.2; }
+    20% { opacity: 1; }
+    25% { opacity: 0.5; }
+    30% { opacity: 1; }
+    35% { opacity: 0.3; }
+    40% { opacity: 1; }
+    45% { opacity: 0.8; }
+    50% { opacity: 1; }
+    55% { opacity: 0.6; }
+    60% { opacity: 1; }
+    65% { opacity: 0.7; }
+    70% { opacity: 1; }
+    75% { opacity: 0.4; }
+    80% { opacity: 1; }
+    85% { opacity: 0.9; }
+    90% { opacity: 1; }
+    95% { opacity: 0.2; }
+    100% { opacity: 1; }
+}
