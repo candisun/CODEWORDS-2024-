@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Exercise</title>
+    <link rel="icon" type="image/x-icon" href="data/grapeone.jpg">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Ensures items are aligned to the top */
+            min-height: 100vh; /* Ensures body fills the height */
+            overflow-y: auto; /* Allows vertical scrolling */
+        }
+        .container {
+            margin: 20px auto;
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+        /* Header Section */
+        .header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid #ff00f2;
+            padding-bottom: 20px;
+            align-items: center;
+            justify-content: center; 
+            text-align:center;
+            
+        }
+        .header h1 {
+            font-family: 'Helvetica', sans-serif;
+            font-weight: 100; /* Light weight */
+            font-size: 250px;
+            color: #ff00f2;
+            text-align: center;
+            margin: 0;
+            line-height: 1;
+            
+        }
+        .header p {
+            font-size: 14px;
+            color: #ff00f2;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 10px;
+        }
+        #arrow {
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 50px;
+            color: #ff00dd;
+            font-family: 'Courier New';
+        }
+        #arrow:hover {
+            color: #ffa1ee;
+        }
+        h2 {
+            color: #ff00f2;
+        }
+        /* Two Column Section */
+        .two-column {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; /* Allows columns to wrap on smaller screens */
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+        .column h2 {
+            font-size: 24px;
+            font-weight: 400;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .column .content {
+            display: none;
+            font-size: 16px;
+            color: #ff00f2;
+            margin-top: 10px;
+        }
+        /* Toggle Button Styles */
+        .toggle-button {
+            cursor: pointer;
+            padding: 5px;
+            background-color: #ffe8fc;
+            color: #ff00f2;
+            border: none;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .two-column {
+                flex-direction: column;
+            }
+        }
+        img {
+            max-width: 60%;
+            height: auto;
+            margin-top: 10px;
+            margin-bottom: 2px;
+        }
+        a {
+            text-decoration: none;
+            color: #ff00f2;
+        }
+        .view-it {
+            display: block;
+            font-size: 14px;
+            color: #ff00f2;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <a href="index.html" id="arrow">&larr;</a>
+            <h1>EXERCISE</h1>
+        </div>
+        <!-- Two Column Section -->
+        <div class="two-column">
+            <!-- Column 1 (HTML) -->
+            <div class="column">
+                <h2>HTML</h2>
+                <!-- Subtitle toggle -->
+                <button class="toggle-button" onclick="toggleContent('movingText')">movingText</button>
+                <div id="movingText" class="content">
+                    <p>list, animation, margin, padding, line-height</p>
+                    <img src="data/hello1.png" alt="Description of the image">
+                    <a href="movingText.html" class="view-it">View exercise</a>
+                </div>
+
+                <button class="toggle-button" onclick="toggleContent('hoverText')">hoverText</button>
+                <div id="hoverText" class="content">
+                    <p>div, span, animation, hover</p>
+                    <img src="data/hello2.png" alt="Description of the image">
+                    <a href="hoverText.html" class="view-it">View exercise</a>
+                </div>
+
+                <button class="toggle-button" onclick="toggleContent('concretePoem')">concretePoem</button>
+                <div id="concretePoem" class="content">
+                    <p>box-sizing, display, non-breaking space, flex, min-height</p>
+                    <img src="data/poem.png" alt="Description of the image">
+                    <a href="concreteOkPoem.html" class="view-it">View exercise</a>
+                </div>
+
+                <button class="toggle-button" onclick="toggleContent('grid')">grid</button>
+                <div id="grid" class="content">
+                    <p>grid-template-columns, gap, justify-content, align-items</p>
+                    <img src="data/grid.png" alt="Description of the image">
+                    <a href="grid.html" class="view-it">View exercise</a>
+                </div>
+            </div>
+
+            <!-- Column 2 (P5) -->
+            <div class="column">
+                <h2>P5JS</h2>
+                <!-- Subtitle toggle -->
+                <button class="toggle-button" onclick="toggleContent('introduction')">introduction</button>
+                <div id="introduction" class="content">
+                    <p>frame rate, circles, ellipse, mouseX &mouseY, pmouseX & pmouseY </p>
+                    <img src="data/intro1.png" alt="Description of the image">
+                    <img src="data/intro2.png" alt="Description of the image">
+                    <img src="data/intro3.png" alt="Description of the image">
+                    <img src="data/intro4.png" alt="Description of the image">
+                    <img src="data/intro5.png" alt="Description of the image">
+                </div>
+
+                <button class="toggle-button" onclick="toggleContent('selfPortrait')">selfPortrait</button>
+                <div id="selfPortrait" class="content">
+                    <p>map, translate, relative coordinates, rotate, push & pop</p>
+                    <img src="data/selfP.png" alt="Description of the image">
+                    <img src="data/self1.png" alt="Description of the image">
+                    <img src="data/self2.png" alt="Description of the image">
+                    <img src="data/self3.png" alt="Description of the image">
+                    <img src="data/self4.png" alt="Description of the image">
+                    <a href="self.html" class="view-it">View exercise</a>
+                </div>
+
+                <button class="toggle-button" onclick="toggleContent('imageCursor')">imageCursor</button>
+                <div id="imageCursor" class="content">
+                    <p>loadImage, div.position, imageMode, mouseX & mouseY</p>
+                    <img src="data/cursor.png" alt="Description of the image">
+                    <a href="imageCursor.html" class="view-it">View exercise</a>
+                </div>
+
+                <button class="toggle-button" onclick="toggleContent('sound')">rotateText</button>
+                <div id="sound" class="content">
+                    <p>translate(xPos, yPos), rotate(random(360)), angleMode(DEGREES); strokeWeight(5)</p>
+                    <img src="data/rotate.png" alt="Description of the image">
+                    <a href="rotate.html" class="view-it">View exercise</a>
+                </div>
+                
+                <button class="toggle-button" onclick="toggleContent('wigglyLetters')">wigglyLetters</button>
+                <div id="wigglyLetters" class="content">
+                    <p>this.x & this.y, speed, char, random</p>
+                    <img src="data/wiggly.png" alt="Description of the image">
+                    <a href="wigglyLetters.html" class="view-it">View exercise</a>
+                </div>
+
+                <button class="toggle-button" onclick="toggleContent('sound')">sound</button>
+                <div id="sound" class="content">
+                    <p>song.amp(volume), song.rate(speed), circle(x, y, diameter), <br>map(value, start1, stop1, start2, stop2)</p>
+                    <img src="data/sound.png" alt="Description of the image">
+                    <a href="sound.html" class="view-it">View exercise</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

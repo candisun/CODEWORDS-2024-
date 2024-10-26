@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="data/grapeone.jpg">
+  <title>Glossary</title>
+  <link rel="stylesheet" href="glossaryStyle.css">
+  <style>
+    .folded {
+      display: none;
+    }
+
+    h3 {
+      cursor: pointer;
+      color: #d0021b;
+      margin-bottom: 5px;
+    }
+
+    .symbol {
+      font-weight: bold;
+      margin: 10px;
+        }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" id="arrow">&larr;</a>
+    <div class="logo">
+      <h1>GLOSSARY</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- HTML Glossary Items -->
+    <div class="grid-item">
+      <h3>HyperText Markup Language HTML</h3>
+      <div>
+        <p>HTML is the standard markup language for creating web pages. It describes the structure of a webpage and is used to <br>structure content.</p>
+      </div>
+
+      <h3><span class="symbol">+</span>Element</h3>
+      <div class="folded">
+        <p>A building block in an HTML document, defined by a start tag, content, and an end tag.</p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Tag</h3>
+      <div class="folded">
+        <p>Tags are used to define the start and end of an element. Most tags come in pairs.</p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Attribute</h3>
+      <div class="folded">
+        <p>Attributes provide additional information about an element, written inside the opening tag.</p>
+        <pre><code>&lt;img src="image.jpg" alt="Description"&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Doctype</h3>
+      <div class="folded">
+        <p>Specifies the document type and version of HTML.</p>
+        <pre><code>&lt;!DOCTYPE html&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Head Element</h3>
+      <div class="folded">
+        <p>Contains metadata for the document, such as the title and link to external resources.</p>
+        <pre><code>&lt;head&gt;
+&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Body Element</h3>
+      <div class="folded">
+        <p>Contains the content of the HTML document (text, images, links, etc.).</p>
+        <pre><code>&lt;body&gt;
+&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;/body&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Heading Tags (&lt;h1&gt; to &lt;h6&gt;)</h3>
+      <div class="folded">
+        <p>Used to define headings, with <code>&lt;h1&gt;</code> being the highest level and <code>&lt;h6&gt;</code> the lowest.</p>
+        <pre><code>&lt;h1&gt;Main Heading&lt;/h1&gt;
+&lt;h2&gt;Subheading&lt;/h2&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Paragraph Tag (&lt;p&gt;)</h3>
+      <div class="folded">
+        <p>Defines a paragraph of text.</p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Link Tag (&lt;a&gt;)</h3>
+      <div class="folded">
+        <p>Creates hyperlinks. The <code>href</code> attribute specifies the URL.</p>
+        <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Image Tag (&lt;img&gt;)</h3>
+      <div class="folded">
+        <p>Inserts an image. The <code>src</code> attribute specifies the image URL, and <code>alt</code> provides a text alternative.</p>
+        <pre><code>&lt;img src="image.jpg" alt="An example image"&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>List Tags (&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;)</h3>
+      <div class="folded">
+        <p>Defines ordered or unordered lists, with list items defined by <code>&lt;li&gt;</code>.</p>
+        <pre><code>&lt;ul&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Table Tags (&lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;)</h3>
+      <div class="folded">
+        <p>Used to create tables in HTML, with rows defined by <code>&lt;tr&gt;</code>, cells by <code>&lt;td&gt;</code>, and headers by <code>&lt;th&gt;</code>.</p>
+        <pre><code>&lt;table&gt;
+&lt;tr&gt;
+&lt;th&gt;Header 1&lt;/th&gt;
+&lt;th&gt;Header 2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+&lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Div Tag (&lt;div&gt;)</h3>
+      <div class="folded">
+        <p>A block-level container used for grouping elements and applying CSS.</p>
+        <pre><code>&lt;div class="container"&gt;
+&lt;p&gt;Content inside a div.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Span Tag (&lt;span&gt;)</h3>
+      <div class="folded">
+        <p>An inline container used for styling part of the text or elements.</p>
+        <pre><code>&lt;p&gt;This is &lt;span class="highlight"&gt;highlighted&lt;/span&gt; text.&lt;/p&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Form Tag (&lt;form&gt;)</h3>
+      <div class="folded">
+        <p>Defines a form for user input.</p>
+        <pre><code>&lt;form action="/submit" method="POST"&gt;
+&lt;input type="text" name="name"&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Input Tag (&lt;input&gt;)</h3>
+      <div class="folded">
+        <p>Defines an input field for a form. Common types include <code>text</code>, <code>password</code>, <code>submit</code>, <code>checkbox</code>, and <code>radio</code>.</p>
+        <pre><code>&lt;input type="text" name="username"&gt;
+&lt;input type="checkbox" name="agree"&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Button Tag (&lt;button&gt;)</h3>
+      <div class="folded">
+        <p>Creates a clickable button.</p>
+        <pre><code>&lt;button type="submit"&gt;Click Me&lt;/button&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Label Tag (&lt;label&gt;)</h3>
+      <div class="folded">
+        <p>Associates a label with a form control.</p>
+        <pre><code>&lt;label for="name"&gt;Name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name"&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>TextArea Tag (&lt;textarea&gt;)</h3>
+      <div class="folded">
+        <p>Defines a multi-line text input.</p>
+        <pre><code>&lt;textarea name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Select Tag (&lt;select&gt;)</h3>
+      <div class="folded">
+        <p>Creates a dropdown list. Use <code>&lt;option&gt;</code> to define each option.</p>
+        <pre><code>&lt;select name="options"&gt;
+&lt;option value="1"&gt;Option 1&lt;/option&gt;
+&lt;option value="2"&gt;Option 2&lt;/select&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Meta Tag (&lt;meta&gt;)</h3>
+      <div class="folded">
+        <p>Provides metadata about the HTML document, such as character set and page description.</p>
+        <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="Free Web tutorials"&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Script Tag (&lt;script&gt;)</h3>
+      <div class="folded">
+        <p>Embeds JavaScript into an HTML document.</p>
+        <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Link Tag (&lt;link&gt;)</h3>
+      <div class="folded">
+        <p>Links external resources such as stylesheets.</p>
+        <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- CSS Glossary Items -->
+    <div class="grid-item">
+      <h3>Cascading Style Sheets (CSS)</h3>
+      <div>
+        <p>CSS is a stylesheet language used for describing the presentation of a document written in HTML or XML. It defines how HTML elements are displayed on screen, paper, or in<br>other media.</p>
+      </div>
+
+      <h3><span class="symbol">+</span>Selector</h3>
+      <div class="folded">
+        <p>A CSS selector is the part of the CSS rule set that identifies the HTML element(s) you want to style.</p>
+        <pre><code>h1 { color: red; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Property</h3>
+      <div class="folded">
+        <p>A property in CSS refers to the type of style that you want to apply to an element.</p>
+        <pre><code>p { color: blue; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Value</h3>
+      <div class="folded">
+        <p>A value is assigned to a property to define its behavior.</p>
+        <pre><code>p { color: blue; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Class Selector</h3>
+      <div class="folded">
+        <p>A class selector allows you to apply styles to HTML elements that share the same class attribute.</p>
+        <pre><code>.myClass { background-color: yellow; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>ID Selector</h3>
+      <div class="folded">
+        <p>An ID selector applies styles to an HTML element with a specific ID attribute.</p>
+        <pre><code>#myId { font-size: 20px; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Box Model</h3>
+      <div class="folded">
+        <p>The CSS box model describes the rectangular boxes generated for elements and consists of margins, borders, padding, and the content area.</p>
+      </div>
+
+      <h3><span class="symbol">+</span>Padding</h3>
+      <div class="folded">
+        <p>Padding creates space between the content of an element and its border.</p>
+        <pre><code>div { padding: 20px; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Margin</h3>
+      <div class="folded">
+        <p>The margin is the space around an element's border.</p>
+        <pre><code>p { margin: 10px; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Float</h3>
+      <div class="folded">
+        <p>The float property is used for positioning and formatting content.</p>
+        <pre><code>img { float: right; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Display</h3>
+      <div class="folded">
+        <p>The display property specifies how an element is displayed.</p>
+        <pre><code>div { display: flex; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Flexbox</h3>
+      <div class="folded">
+        <p>Flexbox is a CSS layout module designed for arranging elements in one-dimensional layouts (either rows or columns).</p>
+        <pre><code>.container { display: flex; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Grid Layout</h3>
+      <div class="folded">
+        <p>CSS Grid Layout is a two-dimensional layout system for web pages, controlling both rows and columns.</p>
+        <pre><code>.grid-container { display: grid; grid-template-columns: 1fr 1fr 1fr; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Media Query</h3>
+      <div class="folded">
+        <p>Media queries allow the content to adapt to different screen sizes and orientations (responsive design).</p>
+        <pre><code>@media (max-width: 600px) { body { background-color: lightblue; } }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Pseudo-Class</h3>
+      <div class="folded">
+        <p>A pseudo-class is used to define the special state of an element, such as :hover when a user interacts with an element.</p>
+        <pre><code>a:hover { color: red; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Z-Index</h3>
+      <div class="folded">
+        <p>The z-index property specifies the stack order of elements, determining which elements appear in front or behind others.</p>
+        <pre><code>div { z-index: 2; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Positioning</h3>
+      <div class="folded">
+        <p>The position property specifies how an element is positioned in the document.</p>
+        <pre><code>.box { position: absolute; top: 50px; left: 100px; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Opacity</h3>
+      <div class="folded">
+        <p>The opacity property sets the transparency level of an element, where 0 is fully transparent, and 1 is fully opaque.</p>
+        <pre><code>div { opacity: 0.5; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Background</h3>
+      <div class="folded">
+        <p>The background property sets various background properties, such as the color, image, position, and repeat behavior of an element’s background.</p>
+        <pre><code>body { background-color: #f3f3f3; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Important</h3>
+      <div class="folded">
+        <p>The !important rule in CSS is used to apply a style with higher precedence, overriding any other style declarations, even inline styles.</p>
+        <pre><code>p { color: blue !important; }</code></pre>
+      </div>
+      <h3><span class="symbol">+</span>Visibility</h3>
+      <div class="folded">
+        <p>The visibility property specifies whether an element is visible or hidden, without affecting the layout.</p>
+        <pre><code>div { visibility: hidden; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Text Alignment</h3>
+      <div class="folded">
+        <p>The text-align property specifies the horizontal alignment of text within an element.</p>
+        <pre><code>p { text-align: center; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Border</h3>
+      <div class="folded">
+        <p>The border property is used to set the width, style, and color of an element’s border.</p>
+        <pre><code>div { border: 1px solid black; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Overflow</h3>
+      <div class="folded">
+        <p>The overflow property specifies what happens if content overflows an element's box.</p>
+        <pre><code>div { overflow: auto; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Box Shadow</h3>
+      <div class="folded">
+        <p>The box-shadow property adds shadow effects around an element's frame.</p>
+        <pre><code>div { box-shadow: 2px 2px 5px grey; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Background Color</h3>
+      <div class="folded">
+        <p>The background-color property defines the background color of an element.</p>
+        <pre><code>body { background-color: lightblue; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Text Transform</h3>
+      <div class="folded">
+        <p>The text-transform property controls the capitalization of text.</p>
+        <pre><code>h1 { text-transform: uppercase; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Transition</h3>
+      <div class="folded">
+        <p>The transition property allows property changes to occur smoothly over a given duration.</p>
+        <pre><code>div { transition: all 0.3s ease-in-out; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Animation</h3>
+      <div class="folded">
+        <p>The animation property allows for the creation of keyframe-based animations.</p>
+        <pre><code>div { animation: slideIn 2s forwards; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Media Query</h3>
+      <div class="folded">
+        <p>Media queries allow the content to adapt to different screen sizes and orientations (responsive design).</p>
+        <pre><code>@media (max-width: 600px) { body { background-color: lightblue; } }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Pseudo-Class</h3>
+      <div class="folded">
+        <p>A pseudo-class is used to define the special state of an element, such as :hover when a user interacts with an element.</p>
+        <pre><code>a:hover { color: red; }</code></pre>
+      </div>
+
+      <h3><span class="symbol">+</span>Z-Index</h3>
+      <div class="folded">
+        <p>The z-index property specifies the stack order of elements, determining which elements appear in front or behind others.</p>
+        <pre><code>div { z-index: 2; }</code></pre>
+      </div>
+    </div>
+
+
+
+    <div class="grid-item">
+      <h3>p5.js</h3>
+      <div>
+        <p>Based in Madrid since 1990, Teresa Sapey + Partners relies on an international multidisciplinary...</p>
+      </div>
+
+      
+        <h3><span class="symbol">+</span>Preload Function</h3>
+        <div class="folded">
+          <p>The 'preload()' function is used to handle asynchronous loading of external files in p5.js. It runs before the 'setup()' function and is commonly used for loading assets like sounds, images, and fonts.</p>
+          <pre><code>function preload() {
+        ring = loadSound("data/ring.mp3");
+      }</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>Setup Function</h3>
+        <div class="folded">
+          <p>The 'setup()' function is called once when the program starts. It initializes variables and sets up the environment, including the creation of the canvas and sound setup.</p>
+          <pre><code>function setup() {
+        createCanvas(windowWidth, windowHeight);
+        ring.setVolume(0.007);
+        text(txt, width / 2, height / 2);
+      }</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>CreateCanvas Function</h3>
+        <div class="folded">
+          <p>The 'createCanvas()' function creates a canvas element in which all the p5.js drawing will take place. In this sketch, the canvas is dynamically set to fit the window size.</p>
+          <pre><code>createCanvas(windowWidth, windowHeight);</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>Draw Function</h3>
+        <div class="folded">
+          <p>The 'draw()' function continuously executes the lines of code contained inside its block until the program is stopped. It is called automatically after 'setup()' and is used to render visuals on the canvas.</p>
+          <pre><code>function draw() {
+        background(220);
+        ellipse(50, 50, 80, 80);
+      }</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>Background Function</h3>
+        <div class="folded">
+          <p>The 'background()' function sets the color used for the background of the p5.js canvas. This function clears the canvas with a specific color in every frame.</p>
+          <pre><code>background(220); // Light grey background</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>LoadSound Function</h3>
+        <div class="folded">
+          <p>The 'loadSound()' function loads a sound file for playback. In this sketch, the sound is played when interacting with particles.</p>
+          <pre><code>ring = loadSound("data/ring.mp3");</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>SetVolume Function</h3>
+        <div class="folded">
+          <p>The 'setVolume()' function sets the volume level for the loaded sound. In this sketch, it is adjusted to a low level to match the user interaction volume.</p>
+          <pre><code>ring.setVolume(0.007);</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>Text Function</h3>
+        <div class="folded">
+          <p>The 'text()' function displays text on the canvas at a specified location. In this sketch, it is used to show the 'txt' string at the center of the canvas.</p>
+          <pre><code>text(txt, width / 2, height / 2);</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>TextFont Function</h3>
+        <div class="folded">
+          <p>The 'textFont()' function sets the font for the text displayed on the canvas.</p>
+          <pre><code>textFont(fontFamily);</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>TextAlign Function</h3>
+        <div class="folded">
+          <p>The 'textAlign()' function sets the alignment for the text being drawn on the canvas. Here, it centers the text horizontally and vertically.</p>
+          <pre><code>textAlign(CENTER, CENTER);</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>Particles Class</h3>
+        <div class="folded">
+          <p>The 'Particle' class defines the behavior of particles that move and interact with the mouse pointer. It contains methods for displaying and updating their position.</p>
+          <pre><code>class Particle {
+        constructor(x, y) { ... }
+        display() { ... }
+        update() { ... }
+      }</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>BlendMode Function</h3>
+        <div class="folded">
+          <p>The 'blendMode()' function defines the blending mode for drawing operations. In this case, the 'ADD' mode is used to create an additive effect for the particles.</p>
+          <pre><code>blendMode(ADD);</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>MousePressed Function</h3>
+        <div class="folded">
+          <p>The 'mousePressed()' function is called once every time the mouse button is pressed. It can be used to trigger an event or interaction based on mouse input.</p>
+          <pre><code>function mousePressed() {
+        fill(0); // Fill black on mouse click
+      }</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>MouseMoved Function</h3>
+        <div class="folded">
+          <p>The 'mouseMoved()' function detects when the mouse is moved, resuming the audio context and playing the sound if particles are nearby.</p>
+          <pre><code>function mouseMoved() {
+        if (dist(p.x, p.y, mouseX, mouseY) < mouseRadius) {
+          ring.play();
+        }
+      }</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>GetAudioContext Function</h3>
+        <div class="folded">
+          <p>The 'getAudioContext()' function accesses the Web Audio context and manages the audio state. In this sketch, it resumes the context when the mouse moves.</p>
+          <pre><code>if (getAudioContext().state !== 'running') {
+        getAudioContext().resume();
+      }</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>Dist Function</h3>
+        <div class="folded">
+          <p>The 'dist()' function calculates the distance between two points in 2D or 3D space, used to detect mouse interaction with particles.</p>
+          <pre><code>let dx = dist(this.x, this.y, mouseX, mouseY);</code></pre>
+        </div>
+      
+        <h3><span class="symbol">+</span>LoadPixels Function</h3>
+        <div class="folded">
+          <p>The 'loadPixels()' function loads the pixel data of the canvas into the 'pixels[]' array, which can be manipulated. It’s used in this sketch to generate particle data based on the text pixels.</p>
+          <pre><code>loadPixels();</code></pre>
+        </div>
+      </div>
+      
+      
+    
+     
+
+
+  <script>
+    // Apply the toggle function to all <h3> elements on the page
+    document.querySelectorAll('h3').forEach(function(header) {
+      header.addEventListener('click', function() {
+        var content = header.nextElementSibling;
+        content.classList.toggle('folded');
+        var symbol = header.querySelector('.symbol');
+        symbol.textContent = content.classList.contains('folded') ? '+' : '−';
+      });
+    });
+  </script>
+</body>
+</html>

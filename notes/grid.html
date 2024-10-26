@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3x3 Image Gallery</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			font-size: 30px;
+			margin:90px;
+			justify-content: center;
+		}
+		#arrow {
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 40px;
+            color: #000000;
+            font-family: 'Courier New', monospace;
+            position: absolute;
+            margin-top: -10px;
+            left: 40px;
+        }
+        #arrow:hover {
+            color: #dbdbdb;
+        }
+
+		.gallery {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 40px;
+
+			.h1 {
+			gap: 40px;
+			padding: 40px;
+			margin: 20px;
+			text-align: center;
+			justify-content: center;
+			align-content: center;
+
+		}
+		}
+		.gallery img {
+			width: 100%;
+			padding:30px;
+			cursor: pointer;
+		}
+		.fullscreen {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.8);
+			justify-content: center;
+			align-items: center;
+		}
+		.fullscreen img {
+			max-width: 90%;
+			max-height: 90%;
+		}
+
+	</style>
+</head>
+<body>
+	<a href="excercise.html" id="arrow">&larr;</a>
+	<h1>THIS IS MY SKO!</h1>
+	
+	<div class="gallery">
+		
+		<a href="google.com" target="_blank"><img src="https://iso.500px.com/wp-content/uploads/2016/08/stock-photo-123068181-1500x1000.jpg" alt="Image 2"></a>
+		<img src="https://iso.500px.com/wp-content/uploads/2016/08/stock-photo-123068181-1500x1000.jpg" alt="Image 3">
+		<img src="https://iso.500px.com/wp-content/uploads/2016/08/stock-photo-123068181-1500x1000.jpg" alt="Image 4">
+		<div>TWO</div>
+		<div>THREE</div>
+		<div>ONE</div>
+		<div>TWO</div>
+		<div>THREE</div>
+		<div>ONE</div>
+		<div>TWO</div>
+		<div>THREE</div>
+		<div>ONE</div>
+		<div>TWO</div>
+		<div>THREE</div>
+
+		<!-- <img src="images/image1.jpg" alt="Image 1">
+		<img src="images/image2.jpg" alt="Image 2">
+		<img src="images/image3.jpg" alt="Image 3">
+		<img src="images/image4.jpg" alt="Image 4">
+		<img src="images/image5.jpg" alt="Image 5">
+		<img src="images/image6.jpg" alt="Image 6"> -->
+		<!-- <img src="images/image7.jpg" alt="Image 7">
+		<img src="images/image8.jpg" alt="Image 8">
+		<img src="images/image9.jpg" alt="Image 9"> -->
+	</div>
+	<div class="fullscreen" id="fullscreen">
+		<img id="fullscreen-img" src="" alt="Fullscreen Image">
+	</div>
+	<!-- <script>
+		const gallery = document.querySelector('.gallery');
+		const fullscreen = document.getElementById('fullscreen');
+		const fullscreenImg = document.getElementById('fullscreen-img');
+
+		gallery.addEventListener('click', (e) => {
+			if (e.target.tagName === 'IMG') {
+				fullscreenImg.src = e.target.src;
+				fullscreen.style.display = 'flex';
+			}
+		});
+
+		fullscreen.addEventListener('click', () => {
+			fullscreen.style.display = 'none';
+		});
+	</script> -->
+</body>
+</html>
+
