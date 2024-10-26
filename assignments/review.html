@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brief 1 Review</title>
+    <style>
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      margin-left: 0%;
+      padding: 8px 16px;
+      font-family: 'Courier New';
+    }
+
+    a:hover {
+      color: rgb(132, 148, 255); 
+    }
+
+        body, html {
+        height: 100%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue; 
+        }
+        .prev, .next {
+        position: absolute;
+        border-radius: 50%; /* Makes the button circular */
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        font-size: 40px;
+        font-weight: 100;
+        font-family: Arial, sans-serif;
+        z-index: 10;
+      }
+  
+      .prev {
+        left: 10px;
+        margin: 10px;
+
+      }
+  
+      .next {
+        right: 10px;
+        margin: 10px;
+      }
+
+      .slider {
+          position: absolute;
+          width: 60%;
+          max-width: 80%;
+          margin: auto;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+       }
+  
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+
+      }
+  
+      .slide {
+        min-width: 100%; 
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+  
+      .slider img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+  
+      .back-link {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 16px;
+      color: #ffffff;
+    }
+    </style>
+  </head>
+  <body>
+    <a href="reflectionb1.html" class="back-link">Back</a>
+    <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+    <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="data/b1/Paper Prototype.png" alt="Image 1"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype2.png" alt="Image 2"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype3.png" alt="Image 3"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype4.png" alt="Image 4"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype5.png" alt="Image 5"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype6.png" alt="Image 6"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype7.png" alt="Image 7"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype8.png" alt="Image 8"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype9.png" alt="Image 9"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype10.png" alt="Image 10"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype11.png" alt="Image 11"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype12.png" alt="Image 12"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype13.png" alt="Image 13"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype14.png" alt="Image 14"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype15.png" alt="Image 15"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype16.png" alt="Image 16"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype17.png" alt="Image 17"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype18.png" alt="Image 18"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype19.png" alt="Image 19"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype20.png" alt="Image 20"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype21.png" alt="Image 21"></div>
+            <div class="slide"><img src="data/b1/Paper Prototype22.png" alt="Image 22"></div>
+          </div>
+
+          <script>
+            let currentIndex = 0;
+        
+            function changeSlide(direction) {
+              const slides = document.querySelector('.slides');
+              const totalSlides = document.querySelectorAll('.slide').length;
+              currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+              slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+          </script>
+            
+  </body>
+  </html>
+  
