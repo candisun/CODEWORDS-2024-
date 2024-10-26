@@ -155,7 +155,7 @@ body {
 }
 
 .up3 {
-  margin-top: 54%;
+  margin-top: 50%;
   position: relative;
 }
 
@@ -219,6 +219,11 @@ body {
 
 .openbook {
   width: 100%;
+  float: left;
+}
+
+.openbook2 {
+  width: 90%;
   float: left;
 }
 

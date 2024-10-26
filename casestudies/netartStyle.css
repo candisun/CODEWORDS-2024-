@@ -1,0 +1,56 @@
+header {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 70px;
+    margin-bottom: -50px;
+    line-height: 95%;
+  }
+  
+  body {
+    margin: 40px;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Syne', sans-serif;
+    background-color: rgb(255, 255, 255); 
+    color: #a6ff00;
+        a {rgb(255, 255, 255)
+        color:#ffffff;
+        }
+   }
+  
+  .okok{
+    width:80%;
+    margin-top: px;
+    margin-left: -45px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .text{
+    margin-top: 70px;
+    width: 30% ;
+    padding: 15px;
+    color: #000000; /* Text color */
+  }
+
+  .caption{
+    position: absolute;
+    margin-left: 900;
+    width: 30% ;
+    color: #000000; /* Text color */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .column {
+    flex: 1;
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+
+ 

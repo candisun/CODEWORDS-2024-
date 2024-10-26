@@ -149,18 +149,18 @@ body {
     }
 
       .text2 {
-        margin-top: 10%;
         padding: 15px;
         background-color: color-mix(in srgb, #ffe3ff 10%, #ffffff 70%);
         color: #ff00c3;
         font-family: 'Comic Sans MS', sans-serif;
-        max-width: 33.3%; /* Ensure it doesn't exceed the container's width */
+        max-width: 34%; /* Ensure it doesn't exceed the container's width */
         min-width: 200px; /* Set a minimum width */
         max-height: 400px;
     }
     .text2 p {
         line-height: 1.2;  
         z-index: -1;
+        margin-top: -2%;
     }
     .garden{
         width:150%;
